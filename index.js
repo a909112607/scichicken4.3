@@ -20,14 +20,28 @@ Example: node index.js playback '/SOME/COOL/DIR/pubg-game1.pcap' | pino
 
 function startWebServer () {
   const apiServerPort = 20086
-  const apiServerPort = 155
-  const apiServerPort = 166
-  const apiServerPort = 177
   backend.listen(apiServerPort, () => {
     console.log('Scientific Chicken Dinner listening on http://localhost:' + apiServerPort)
   })
 }
-
+function startWebServer () {
+  const apiServerPort = 1555
+  backend.listen(apiServerPort, () => {
+    console.log('Scientific Chicken Dinner listening on http://localhost:' + apiServerPort)
+  })
+}
+function startWebServer () {
+  const apiServerPort = 1666
+  backend.listen(apiServerPort, () => {
+    console.log('Scientific Chicken Dinner listening on http://localhost:' + apiServerPort)
+  })
+}
+function startWebServer () {
+  const apiServerPort = 1777
+  backend.listen(apiServerPort, () => {
+    console.log('Scientific Chicken Dinner listening on http://localhost:' + apiServerPort)
+  })
+}
 function printStateOnConsole() {
   setInterval(() => {
     console.log(`[${utils.toLocalISOString(new Date())}] - playbackState: ${gamestate.playbackState}, speed: ${gamestate.playbackSpeed}, playbackIndex: ${gamestate.playbackIndex}, processedEvents: ${gamestate.totalProcessedEvents}/${gamestate.playbackEvents.length}`)
